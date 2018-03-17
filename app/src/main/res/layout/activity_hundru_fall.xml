@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_hundru_fall"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back3"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.kam.mytourism.HundruFall">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/hundru"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="Description :"
+        android:textSize="25dp"
+        android:textColor="@android:color/holo_orange_dark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
+        android:id="@+id/textView"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="It is the highest waterfall of Jharkhand."
+        android:textColor="#ffffff"
+        android:textSize="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/textView"
+ />
+
+    <Button
+        android:text="See on Maps"
+        android:textSize="25dp"
+        android:layout_width="300dp"
+        android:textColor="@android:color/holo_purple"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:onClick="map"
+        android:layout_marginTop="26dp"
+        android:id="@+id/button3" />
+
+    <Button
+        android:text="Helpline"
+        android:textColor="@android:color/holo_purple"
+        android:layout_width="300dp"
+        android:textSize="25dp"
+        android:onClick="helpline"
+        android:layout_height="wrap_content"
+        android:id="@+id/button4"
+        android:layout_below="@+id/button3"
+        android:layout_alignLeft="@+id/button3"
+        android:layout_alignStart="@+id/button3"
+        android:layout_marginTop="14dp" />
+
+</RelativeLayout>
